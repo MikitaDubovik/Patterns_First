@@ -1,0 +1,75 @@
+<?xml version = "1.0"?>
+<train>
+    <timetable>
+        <info>
+            <number-route>1</number-route>
+            <begin-date>01-02-2018</begin-date>
+            <begin-time>19:45</begin-time>
+            <destination>Monako</destination>
+            <begin-station>Je Tyan</begin-station>
+            <platform>3/14</platform>
+            <end-station>Je Kun</end-station>
+            <type>VIP</type>
+            <cost>50</cost>
+            <end-date>20-02-2018</end-date>
+            <end-time>08.30</end-time>
+        </info>
+
+        <info>
+            <number-route>2</number-route>
+            <begin-date>06-02-2018</begin-date>
+            <begin-time>19:45</begin-time>
+            <destination>Monako</destination>
+            <begin-station>Je Tyan</begin-station>
+            <platform>3/14</platform>
+            <end-station>Je Kun</end-station>
+            <type>VIP</type>
+            <cost>50</cost>
+            <end-date>11-02-2018</end-date>
+            <end-time>08.30</end-time>
+        </info>
+
+        <info>
+            <number-route>3</number-route>
+            <begin-date>01-02-2018</begin-date>
+            <begin-time>19:45</begin-time>
+            <destination>Monako</destination>
+            <begin-station>Je Tyan</begin-station>
+            <platform>3/14</platform>
+            <end-station>Je Kun</end-station>
+            <type>VIP</type>
+            <cost>50</cost>
+            <end-date>02-02-2018</end-date>
+            <end-time>08.30</end-time>
+        </info>
+
+        <info>
+            <number-route>4</number-route>
+            <begin-date>01-02-2018</begin-date>
+            <begin-time>19:45</begin-time>
+            <destination>Tira</destination>
+            <begin-station>Je Tyan</begin-station>
+            <platform>3/14</platform>
+            <end-station>Je Kun</end-station>
+            <type>BIP</type>
+            <cost>50</cost>
+            <end-date>02-02-2018</end-date>
+            <end-time>08.30</end-time>
+        </info>
+
+        <info>
+            <number-route>5</number-route>
+            <begin-date>01-02-2018</begin-date>
+            <begin-time>19:45</begin-time>
+            <destination>Kira</destination>
+            <begin-station>Je Tyan</begin-station>
+            <platform>3/14</platform>
+            <end-station>Je Kun</end-station>
+            <type>RIP</type>
+            <cost>50</cost>
+            <end-date>02-02-2018</end-date>
+            <end-time>08.30</end-time>
+        </info>
+
+    </timetable>
+</train>

@@ -1,0 +1,70 @@
+<?xml version = "1.0"?>
+<bus>
+    <timetable>
+        <info>
+            <number-route>1</number-route>
+            <date>01-02-2018</date>
+            <time>19:45</time>
+            <destination>Minsk</destination>
+            <begin-station>Je Tyan</begin-station>
+            <platform>3/14</platform>
+            <end-station>Je Kun</end-station>
+            <cost>50</cost>
+            <mark>Reno</mark>
+            <take-time>1 days</take-time>
+        </info>
+
+        <info>
+            <number-route>2</number-route>
+            <date>06-04-2018</date>
+            <time>19:45</time>
+            <destination>Minsk</destination>
+            <begin-station>Je Tyan</begin-station>
+            <platform>3/14</platform>
+            <end-station>Je Kun</end-station>
+            <cost>50</cost>
+            <mark>Reno</mark>
+            <take-time>2 days</take-time>
+        </info>
+
+        <info>
+            <number-route>3</number-route>
+            <date>05-06-2018</date>
+            <time>19:45</time>
+            <destination>Varshava</destination>
+            <begin-station>Je Tyan</begin-station>
+            <platform>3/14</platform>
+            <end-station>Je Kun</end-station>
+            <cost>50</cost>
+            <mark>Reno</mark>
+            <take-time>2 days</take-time>
+        </info>
+
+        <info>
+            <number-route>4</number-route>
+            <date>07-08-2018</date>
+            <time>19:45</time>
+            <destination>New-York</destination>
+            <begin-station>Je Tyan</begin-station>
+            <platform>3/14</platform>
+            <end-station>Je Kun</end-station>
+            <cost>50</cost>
+            <mark>Reno</mark>
+            <take-time>2 days</take-time>
+        </info>
+
+        <info>
+            <number-route>5</number-route>
+            <date>09-10-2018</date>
+            <time>19:45</time>
+            <destination>Pekin</destination>
+            <begin-station>Je Tyan</begin-station>
+            <platform>3/14</platform>
+            <end-station>Je Kun</end-station>
+            <cost>50</cost>
+            <mark>Reno</mark>
+            <take-time>2 days</take-time>
+        </info>
+
+    </timetable>
+</bus>

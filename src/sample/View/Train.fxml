@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.chart.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="765.0" prefWidth="1366.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controllers.DisplayTrain">
+   <children>
+      <TabPane layoutX="1.0" layoutY="-58.0" prefHeight="765.0" prefWidth="1366.0" stylesheets="@../style.css" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <tabs>
+            <Tab text="График двежения транспорта">
+               <content>
+                  <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="679.0" prefWidth="1339.0">
+                     <children>
+                        <LineChart fx:id="lineChart" layoutX="6.0" layoutY="68.0" prefHeight="399.0" prefWidth="630.0" style="margin: 100px;" AnchorPane.bottomAnchor="212.0">
+                          <xAxis>
+                            <CategoryAxis label="Направление" fx:id="xAxis" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis fx:id="yAxis" label="Стоимость" side="LEFT" />
+                          </yAxis>
+                        </LineChart>
+                        <BarChart fx:id="barChart" layoutX="669.0" layoutY="68.0" prefHeight="400.0" prefWidth="636.0">
+                          <xAxis>
+                            <CategoryAxis label="Направление" side="BOTTOM" />
+                          </xAxis>
+                          <yAxis>
+                            <NumberAxis label="Количество рейсов" side="LEFT" />
+                          </yAxis>
+                        </BarChart>
+                        <Label layoutX="85.0" layoutY="25.0" text="Распределение пасажиропотока по совокупной стоимости " />
+                        <Label layoutX="750.0" layoutY="25.0" text="Распределение пасажиропотока по направлениям " />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+            <Tab text="Расписание">
+               <content>
+                  <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="773.0" prefWidth="1356.0">
+                     <children>
+                        <AnchorPane layoutX="39.0" layoutY="26.0" prefHeight="503.0" prefWidth="790.0">
+                           <children>
+                              <TableView fx:id="tableTrain" prefHeight="503.0" prefWidth="922.0">
+                                 <columns>
+                                    <TableColumn fx:id="number" prefWidth="100.0" text="Номер" />
+                                    <TableColumn fx:id="beginDate" prefWidth="100.0" text="Дата начала" />
+                                    <TableColumn fx:id="endDate" prefWidth="100.0" text="Дата завершения" />
+                                    <TableColumn fx:id="beginTime" prefWidth="100.0" text="Время начала" />
+                                    <TableColumn fx:id="endTime" prefWidth="100.0" text="Время конца" />
+                                    <TableColumn fx:id="destination" prefWidth="100.0" text="Направление" />
+                                    <TableColumn fx:id="beginStation" prefWidth="100.0" text="Начальная станция" />
+                                    <TableColumn fx:id="platform" prefWidth="100.0" text="Платформа" />
+                                    <TableColumn fx:id="endStation" prefWidth="100.0" text="Конечная станция" />
+                                    <TableColumn fx:id="type" prefWidth="100.0" text="Тип" />
+                                    <TableColumn fx:id="cost" prefWidth="100.0" text="Стоимость" />
+                                 </columns>
+                              </TableView>
+                           </children>
+                        </AnchorPane>
+                        <Button fx:id="refresh" layoutX="1111.0" layoutY="576.0" mnemonicParsing="false" onAction="#onRefresh" styleClass="buttonOther" text="Обновить" />
+                        <ChoiceBox fx:id="chooseDist" layoutX="1082.0" layoutY="234.0" prefHeight="20.0" prefWidth="150.0" />
+                        <Label layoutX="1012.0" layoutY="42.0" text="Введите временной интервал" />
+                        <Label layoutX="1040.0" layoutY="83.0" text="С" />
+                        <Label layoutX="1034.0" layoutY="130.0" text="По" />
+                        <Label layoutX="1054.0" layoutY="184.0" prefHeight="30.0" prefWidth="228.0" text="Выберите направление" />
+                        <DatePicker fx:id="datePickerFrom" layoutX="1080.0" layoutY="85.0" />
+                        <DatePicker fx:id="datePickerTo" layoutX="1080.0" layoutY="133.0" />
+                        <TextField fx:id="numberTrip" layoutX="1012.0" layoutY="521.0" prefHeight="44.0" prefWidth="330.0" promptText="Выберите ближайшие N рейсов">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </TextField>
+                        <CheckBox fx:id="weekday" layoutX="1091.0" layoutY="302.0" mnemonicParsing="false" text="Будние">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </CheckBox>
+                        <CheckBox fx:id="weekend" layoutX="1091.0" layoutY="347.0" mnemonicParsing="false" text="Выходные">
+                           <font>
+                              <Font size="20.0" />
+                           </font>
+                        </CheckBox>
+                        <ChoiceBox fx:id="chooseType" layoutX="1082.0" layoutY="451.0" prefHeight="20.0" prefWidth="150.0" />
+                        <Label layoutX="1082.0" layoutY="396.0" prefHeight="30.0" prefWidth="170.0" text="Выберите тип" />
+                     </children>
+                  </AnchorPane>
+               </content>
+            </Tab>
+         </tabs>
+      </TabPane>
+   </children>
+</AnchorPane>

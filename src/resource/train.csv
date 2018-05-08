@@ -1,0 +1,6 @@
+number;begin-date;begin-time;destination;begin-station;platform;end-station;type;cost;end-date;end-time
+1;01.02.2018;19:45;dest;beg;plat;endS;type;20;endD;endT
+2;02.02.2018;20:45;M;beg;plat;endS;type;40;endD;endT
+3;03.02.2018;21:45;N;beg;plat;endS;type;60;endD;endT
+4;04.02.2018;22:45;D;beg;plat;endS;type;80;endD;endT
+5;05.02.2018;23:45;B;beg;plat;endS;type;100;endD;endT

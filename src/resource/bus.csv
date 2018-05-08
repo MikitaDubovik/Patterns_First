@@ -1,0 +1,6 @@
+number-route;date;time;destination;begin-station;platform;end-station;cost;mark;take-time
+1;01.02.2018;19:45;Minsk;Je;pl;end;10;makr;take
+2;01.02.2018;19:45;Monako;Je;pl;end;20;makr;take
+3;01.02.2018;19:45;Monako;Je;pl;end;30;makr;take
+4;01.02.2018;19:45;Jebr;Je;pl;end;40;makr;take
+5;01.02.2018;19:45;Monako;Je;pl;end;50;makr;take
